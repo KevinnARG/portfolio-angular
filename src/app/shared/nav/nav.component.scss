@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+$color-principal: #354b92;
+$color-oscuro: #0f1729ff;
+
+a {
+    text-wrap: nowrap;
+    transition: all ease-in-out 300ms;
+}
+
+b {
+    background: -webkit-linear-gradient(#0d7dbe, rgb(45, 69, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease-in-out 300ms;
+}
+
+@media screen and (max-width: 374px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+
+        #menu {
+            display: flex;
+            color: $color-principal;
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+            }
+    
+            margin-left: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                display: none;
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 200ms;
+
+                    &:hover {
+                        color: rgb(167, 48, 48);
+                        transform: scale(1.05);
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+                display: none;
+    
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+    
+        #menu {
+            display: flex;
+            color: $color-principal;
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+            }
+    
+            margin-left: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                display: none;
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 200ms;
+
+                    &:hover {
+                        color: rgb(167, 48, 48);
+                        transform: scale(1.05);
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+                display: none;
+    
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+    
+        #menu {
+            display: flex;
+            color: $color-principal;
+            font-size: 3rem;
+            margin-right: 2rem;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+                color: black;
+            }
+    
+            margin-left: 2rem;
+            font-size: 1.5rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                display: none;
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 200ms;
+
+                    &:hover {
+                        color: rgb(167, 48, 48);
+                        transform: scale(1.05);
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+                display: none;
+    
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+    
+        #menu {
+            display: flex;
+            color: $color-principal;
+            font-size: 3rem;
+            margin-right: 3rem;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+                color: black;
+            }
+    
+            margin-left: 2rem;
+            font-size: 1.7rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                display: none;
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 200ms;
+
+                    &:hover {
+                        color: rgb(167, 48, 48);
+                        transform: scale(1.05);
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 4rem;
+                display: flex;
+    
+                a {
+                    text-decoration: none;
+                    color: $color-principal;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        color: $color-principal;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+    
+        #menu {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+                color: black;
+
+            }
+    
+            margin-left: 8rem;
+            font-size: 1.5rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $color-principal;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 200ms;
+
+                    &:hover {
+                        color: $color-principal;
+                        transform: scale(1.05);
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+    
+                a {
+                    text-decoration: none;
+                    color: $color-principal;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        color: $color-principal;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-oscuro;
+    
+        #menu {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+            a {
+                text-decoration: none;
+                color: white
+            }
+    
+            margin-left: 8rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: $color-principal;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 300ms;
+
+                    &:hover {
+                        color: $color-principal;
+                        transform: scale(1.05);
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+    
+                a {
+                    text-decoration: none;
+                    color: $color-principal;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        color: $color-principal;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    header {
+        display: flex;
+        height: 6rem;
+        align-items: center;
+        justify-content: space-between;
+    
+        #menu {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+    
+            a {
+                text-decoration: none;
+                color: black;
+
+            }
+    
+            margin-left: 8rem;
+        }
+    
+        nav {
+            display: flex;
+            align-items: center;
+    
+            .links {
+                a {
+                    text-decoration: none;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 4rem;
+                    font-size: 1.1rem;
+                    transition: all ease-in-out 300ms;
+
+                    &:hover {
+                        color: $color-principal;
+                        transform: scale(1.05);
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+    
+            .icons {
+                display: flex;
+                align-items: center;
+                margin-left: 4rem;
+                margin-right: 8rem;
+    
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 2rem;
+                    font-size: 1.4rem;
+                    transition: all ease-in-out 300ms;
+                    &:hover {
+                        color: $color-principal;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+a {
+    &:hover {
+        opacity: 0.5;
+    }
+}
